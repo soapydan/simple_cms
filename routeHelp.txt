@@ -1,0 +1,13 @@
+Routes
+
+Simple Route
+
+	get "demo/index"
+	match "demo/index", :to => "demo#index"     (controller: demo, action: index)
+	
+Default Route
+	GET /students/edit/52
+	match ':controller(/:action(/:id(.:format)))'
+	
+Root Route
+	root :to => "demo#index"

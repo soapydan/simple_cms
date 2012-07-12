@@ -1,0 +1,11 @@
+Rails Notes
+
+hello.html.erb
+
+Template name: hello
+Process with: ERb		ERb = embedded ruby
+Output format: HTML
+
+embedding use:
+<% code %>	exe only
+<%= code %>	exe and output

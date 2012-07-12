@@ -1,0 +1,49 @@
+git commits
+
+	git config --global user.name "Your Name"
+	git config --global user.email youremail@example.com
+	git config --global alias.co checkout      					(setup checkout alias)
+
+	git add . 								(once)
+	git status 								(check status/changes)
+	git log									(check which save)
+
+	git commit -m "Initial commit"			(save)(-m: comment)
+	git commit -a 							(save)(-a: add new files)
+	
+	git checkout -f							(revert 2 lastcommit)(-f: force ovrwr)
+	git checkout -b	modify-<FILENAME>			(-b: checkout n branch)
+	git co -b modify-<FILENAME>				(alias co)
+	
+	git branch								(list branches)
+	git branch -d <BRANCH>					(delete merged branch)
+	git branch -D <BRANCH>					(delete unmerged branch)
+	git checkout master 					(switch to branch master)
+	git merge <BRANCH>					(merge current and branch)
+	
+	
+	
+github pushes
+
+	git remote add origin https://github.com/soapydan/Tut_Rails_1.git
+	git push -u origin master
+	
+	
+	
+Heroku	
+
+	[sudo] gem install heroku
+	heroku keys:add
+	heroku create
+	git push heroku master
+	git push <name given in git for remote> <branch>
+	
+	
+Setting up SSH via command line 
+
+	*set repo to SSH
+	git remote set-url origin git@github.com:user/repo.git
+	
+	
+side note
+	rm -rf <file>					remove folder and subfolders

@@ -1,0 +1,16 @@
+chapter 2:
+
+change gemfile 
+bundle install
+git add Gemfile Gemfile.lock
+git commit
+git remote add origin git@github.com:<username>/demo_app.git
+git push origin master
+
+rails generate scaffold User name:string email:string
+rake db:migrate
+
+rake -T db  		list database task
+rake -T				see all availabe commands (very long)
+
+

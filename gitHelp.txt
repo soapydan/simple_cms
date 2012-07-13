@@ -1,3 +1,8 @@
+for more info
+http://www.vogella.com/articles/Git/article.html
+http://www.vogella.com/articles/EGit/article.html
+
+
 git commits
 
 	git config --global user.name "Your Name"

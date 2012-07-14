@@ -3,22 +3,44 @@
 <p>Hello from hello</p>
 <p>Find me in app/views/demo/hello.html.erb</p>
 
+<%= @id%><br/>
+Next page: <%= @page+ 1%><br/> 
+
+
+
 <% 1+1 %>	
-<%= 1+1 %>		<!--compute with output -->
+<p>1+1 in erb = <%= 1+1 %></p>	<!--compute with output -->
 
 <% target = "world" %>		<!--compute: store target-->
-<%= "Hello #{target}" %>	<!--compute and print-->
+<%= "Hello #{target}" %><br />	<!--compute and print-->
 
 
+
+<!--can't use puts/gets or it outputs to the server-->
 <%
-3.times do
-puts "xxx"
-end
-%>			<!--can't use puts/gets or it outputs to the server-->
+	3.times do
+	puts "xxx"
+	end
+%>			
 
 
 <!--Proper way to print to site with ruby-->
 <%3.times do %>
 <%= "xxx"%>
+<%end%><br />
+
+
+<% @array.each do |n|%>
+<%= n %><br />
 <%end%>
-		
+
+<a href ="/demo/index">index page</a>
+
+<%= link_to("other", "other")%>
+<%= link_to("redirect",{:action => 'redirect'})%>
+
+<hr/>
+
+<%= params.inspect%>
+
+

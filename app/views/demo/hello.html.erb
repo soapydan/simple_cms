@@ -36,9 +36,10 @@ Next page: <%= @page+ 1%><br/>
 
 <a href ="/demo/index">index page</a>
 
-<%= link_to("other", "other")%>
+<%= link_to("other",{:action => 'other'})%>
 <%= link_to("redirect",{:action => 'redirect'})%>
 
+<!-- <%= link_to("other", "other")%> <!--will do hello/other *** does not work --> 
 <hr/>
 
 <%= params.inspect%>

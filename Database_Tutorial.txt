@@ -1,0 +1,13 @@
+chpater 6
+
+SHOW DATABASES;
+CREATE DATABASES db_name;
+DROP DATABASES db_name;
+
+GRANT ALL PRIVILEGES ON db_name.* to 'username'@'localhost' IDENTIFIED BY 'password';
+
+SHOW GRANTS FOR 'username'@'localhost';
+exit
+
+
+mysql -u username -p db_name

@@ -1,4 +1,5 @@
 class DemoController < ApplicationController
+  #chapter 5
   def index
 	# render(:action => 'hello')  	#action using the 'hello' page
 	#render('hello') 		#same as: 	render('demo/hello')  same as: 	render(:template => 'demo/hello')

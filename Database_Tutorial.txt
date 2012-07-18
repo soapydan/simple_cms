@@ -1,7 +1,7 @@
 chpater 6
 
 SHOW DATABASES;
-CREATE DATABASES db_name;
+CREATE DATABASE db_name;
 DROP DATABASES db_name;
 
 GRANT ALL PRIVILEGES ON db_name.* to 'username'@'localhost' IDENTIFIED BY 'password';
@@ -11,3 +11,5 @@ exit
 
 
 mysql -u username -p db_name
+
+mysql -u simple_cms -p simple_cms_development
